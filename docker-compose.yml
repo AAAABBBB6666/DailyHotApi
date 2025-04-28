@@ -1,8 +1,10 @@
 services:
-  DailyhotApi:
+  dailyhot-api:
+    container_name: dailyhot-api
     build:
       context: .
       target: runner
+    image: dailyhot-api:latest
     ports:
       - "6688:6688"
     volumes:
